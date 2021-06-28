@@ -10,11 +10,11 @@
     props: {
       text: String,
       color: String,
-      action: String,
+      action: Function,
     },
     methods: {
       onClick() {
-        this.$emit(`${action}`)
+        this.$emit('btn-click') //reusable
       }
     }
   }
